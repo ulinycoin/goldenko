@@ -168,15 +168,25 @@
       <a href="#" class="block">
         <img src="/img/logo.jpg" alt="Goldenko Logo" class="h-20 w-auto object-contain" width="220" height="80">
       </a>
-      <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
-        <a href="#problems" class="hover:text-primary transition-colors">Problēmas</a>
-        <a href="#solutions" class="hover:text-primary transition-colors">Risinājumi</a>
-        <a href="#experience" class="hover:text-primary transition-colors">Pieredze</a>
-        <a href="#process" class="hover:text-primary transition-colors">Process</a>
-        <a href="#faq" class="hover:text-primary transition-colors">BUJ</a>
-        <a href="#contact" class="hover:text-primary transition-colors">Kontakti</a>
+      <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+        <div class="flex space-x-6">
+          <a href="#problems" data-i18n="nav_problems" class="hover:text-primary transition-colors">Problēmas</a>
+          <a href="#solutions" data-i18n="nav_solutions" class="hover:text-primary transition-colors">Risinājumi</a>
+          <a href="#experience" data-i18n="nav_experience" class="hover:text-primary transition-colors">Pieredze</a>
+          <a href="#process" data-i18n="nav_process" class="hover:text-primary transition-colors">Process</a>
+          <a href="#faq" data-i18n="nav_faq" class="hover:text-primary transition-colors">BUJ</a>
+          <a href="#contact" data-i18n="nav_contact" class="hover:text-primary transition-colors">Kontakti</a>
+        </div>
+        <div
+          class="flex items-center border-l border-slate-200 pl-8 space-x-2 text-xs uppercase tracking-wider text-slate-400">
+          <button data-lang="lv" class="lang-btn hover:text-primary transition-colors">LV</button>
+          <span>|</span>
+          <button data-lang="en" class="lang-btn hover:text-primary transition-colors">EN</button>
+          <span>|</span>
+          <button data-lang="ru" class="lang-btn hover:text-primary transition-colors">RU</button>
+        </div>
       </div>
-      <a href="#contact"
+      <a href="#contact" data-i18n="btn_audit"
         class="bg-primary hover:bg-blue-800 text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-transform hover:scale-105 active:scale-95 shadow-lg shadow-blue-900/20">
         Pieteikt Auditu
       </a>
@@ -186,26 +196,30 @@
   <!-- Mobile Fixed Navigation -->
   <div class="md:hidden fixed bottom-0 inset-x-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200">
     <div class="max-w-lg mx-auto px-4 py-3">
-      <div class="grid grid-cols-5 gap-2 text-xs font-semibold text-slate-600" aria-label="Mobilā navigācija">
+      <div class="grid grid-cols-5 gap-2 text-[10px] font-semibold text-slate-600" aria-label="Mobilā navigācija">
         <a href="#problems" class="flex flex-col items-center gap-1 hover:text-primary">
           <span class="inline-flex h-2 w-2 rounded-full bg-red-400"></span>
-          Problēmas
+          <span data-i18n="nav_problems">Problēmas</span>
         </a>
         <a href="#solutions" class="flex flex-col items-center gap-1 hover:text-primary">
           <span class="inline-flex h-2 w-2 rounded-full bg-blue-400"></span>
-          Risinājumi
+          <span data-i18n="nav_solutions">Risinājumi</span>
         </a>
         <a href="#process" class="flex flex-col items-center gap-1 hover:text-primary">
           <span class="inline-flex h-2 w-2 rounded-full bg-slate-400"></span>
-          Process
+          <span data-i18n="nav_process">Process</span>
         </a>
         <a href="#faq" class="flex flex-col items-center gap-1 hover:text-primary">
           <span class="inline-flex h-2 w-2 rounded-full bg-green-400"></span>
-          BUJ
+          <span data-i18n="nav_faq">BUJ</span>
         </a>
-        <a href="#contact" class="flex flex-col items-center gap-1 text-primary">
-          <span class="inline-flex h-2 w-2 rounded-full bg-primary"></span>
-          Kontakti
+        <a href="#contact" class="flex flex-col items-center gap-1 text-primary text-center">
+          <div class="flex space-x-1 mb-1 border-b border-primary/20 pb-0.5">
+            <button data-lang="lv" class="lang-btn">LV</button>
+            <button data-lang="en" class="lang-btn">EN</button>
+            <button data-lang="ru" class="lang-btn">RU</button>
+          </div>
+          <span data-i18n="nav_contact" class="leading-none">Kontakti</span>
         </a>
       </div>
     </div>
@@ -226,21 +240,23 @@
           <div
             class="inline-flex items-center space-x-2 bg-blue-900/50 border border-blue-700/50 rounded-full px-4 py-1.5 mb-8 backdrop-blur-sm hero-item">
             <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
-            <span class="text-blue-100 text-xs font-semibold tracking-wide uppercase">Oficiālie ES Standarti EN
+            <span data-i18n="hero_badge" class="text-blue-100 text-xs font-semibold tracking-wide uppercase">Oficiālie
+              ES Standarti EN
               81-20:2021</span>
           </div>
 
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 hero-item">
-            Liftu Modernizācija un Apsaimniekošana Jūsu Īpašumam
+          <h1 data-i18n="hero_title"
+            class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 hero-item">
+            Liftu Modernizācija un Apsaimniekošana Jūsu Īпаšumam
           </h1>
 
-          <p class="text-lg md:text-xl text-slate-300 mb-10 leading-relaxed max-w-2xl hero-item">
+          <p data-i18n="hero_desc" class="text-lg md:text-xl text-slate-300 mb-10 leading-relaxed max-w-2xl hero-item">
             Sertificēti risinājumi Latvijas namu pārvaldniekiem un attīstītājiem.
             Mēs samazinām birokrātiju un garantējam atbilstību visām ES drošības normām.
           </p>
 
           <div class="flex flex-col sm:flex-row gap-4 mb-16 hero-item">
-            <a href="#contact"
+            <a href="#contact" data-i18n="hero_btn_primary"
               class="inline-flex items-center justify-center px-8 py-4 bg-primary hover:bg-blue-700 text-white font-bold rounded-lg transition-all shadow-lg shadow-blue-900/30 text-lg group">
               Saņemt Bezmaksas Auditu
               <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor"
@@ -249,7 +265,7 @@
                 </path>
               </svg>
             </a>
-            <a href="#process"
+            <a href="#process" data-i18n="hero_btn_secondary"
               class="inline-flex items-center justify-center px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg backdrop-blur-sm border border-white/10 transition-colors">
               Uzzināt Vairāk
             </a>
@@ -257,7 +273,7 @@
 
           <!-- Trust Indicators -->
           <div class="border-t border-white/10 pt-8 hero-item">
-            <p class="text-sm text-slate-400 mb-4">Mūsu partneri un sertifikācija:</p>
+            <p data-i18n="hero_trust" class="text-sm text-slate-400 mb-4">Mūsu partneri un sertifikācija:</p>
             <div class="flex flex-wrap gap-8 items-center opacity-70 grayscale">
               <span class="text-2xl font-bold text-white tracking-widest font-sans">KONE</span>
               <span class="text-2xl font-bold text-white tracking-widest font-sans">OTIS</span>
@@ -285,8 +301,10 @@
                   </svg>
                 </div>
                 <div>
-                  <h3 class="text-xl font-bold text-slate-900 mb-2">Būvvaldes Sodi un Riski</h3>
-                  <p class="text-slate-600">Neatbilstoši lifti var novest pie ēkas ekspluatācijas apturēšanas un
+                  <h3 data-i18n="prob_item1_title" class="text-xl font-bold text-slate-900 mb-2">Būvvaldes Sodi un Riski
+                  </h3>
+                  <p data-i18n="prob_item1_desc" class="text-slate-600">Neatbilstoši lifti var novest pie ēkas
+                    ekspluatācijas apturēšanas un
                     apdrošināšanas atteikumiem.</p>
                 </div>
               </div>
@@ -298,23 +316,26 @@
                   </svg>
                 </div>
                 <div>
-                  <h3 class="text-xl font-bold text-slate-900 mb-2">Dīkstāve = Zaudējumi</h3>
-                  <p class="text-slate-600">Vecas iekārtas lūzt biežāk. Katra dīkstāves diena mazina iedzīvotāju un
+                  <h3 data-i18n="prob_item2_title" class="text-xl font-bold text-slate-900 mb-2">Dīkstāve = Zaudējumi
+                  </h3>
+                  <p data-i18n="prob_item2_desc" class="text-slate-600">Vecas iekārtas lūzt biežāk. Katra dīkstāves
+                    diena mazina iedzīvotāju un
                     nomnieku apmierinātību.</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="order-1 md:order-2">
-            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">70% no Latvijas liftiem ir tehniski vai
+            <h2 data-i18n="prob_title" class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">70% no Latvijas
+              liftiem ir tehniski vai
               morāli
               novecojuši</h2>
-            <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+            <p data-i18n="prob_desc1" class="text-lg text-slate-600 mb-6 leading-relaxed">
               Lielākā daļa liftu Latvijas daudzdzīvokļu namos ir uzstādīti pirms vairāk nekā 25 gadiem.
               Tie neatbilst mūsdienu ES drošības standartiem (EN 81-20/50), patērē daudz elektroenerģijas un rada
               troksni.
             </p>
-            <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+            <p data-i18n="prob_desc2" class="text-lg text-slate-600 mb-8 leading-relaxed">
               Mēs zinām, cik sarežģīts var būt saskaņošanas process. Tāpēc mēs uzņemamies visu birokrātiju.
             </p>
           </div>
@@ -326,9 +347,12 @@
     <section id="why-us" class="py-20 bg-slate-900 text-white relative overflow-hidden">
       <div class="container mx-auto px-6 relative z-10">
         <div class="text-center max-w-3xl mx-auto mb-16">
-          <span class="text-primary text-sm font-bold uppercase tracking-widest mb-2 block">Kāpēc Goldenko?</span>
-          <h2 class="text-3xl md:text-4xl font-bold mb-6">Nīderlandes Standarts Latvijas Tirgū</h2>
-          <p class="text-slate-400 text-lg">Mēs apvienojam KONE un Otis tehnoloģijas ar mūsu pieredzi 150+ projektos
+          <span data-i18n="why_badge" class="text-primary text-sm font-bold uppercase tracking-widest mb-2 block">Kāpēc
+            Goldenko?</span>
+          <h2 data-i18n="why_title" class="text-3xl md:text-4xl font-bold mb-6">Nīderlandes Standarts Latvijas Tirgū
+          </h2>
+          <p data-i18n="why_desc" class="text-slate-400 text-lg">Mēs apvienojam KONE un Otis tehnoloģijas ar mūsu
+            pieredzi 150+ projektos
             Nīderlandē, piedāvājot augstāko kvalitāti par konkurētspējīgu cenu.</p>
         </div>
 
@@ -336,20 +360,23 @@
           <div
             class="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-colors">
             <div class="text-4xl font-bold text-primary mb-4">150+</div>
-            <h3 class="text-xl font-semibold mb-3">Realizēti Projekti</h3>
-            <p class="text-slate-400">Veiksmīga pieredze Nīderlandē ar augstākajām kvalitātes prasībām.</p>
+            <h3 data-i18n="why_stat1_title" class="text-xl font-semibold mb-3">Realizēti Projekti</h3>
+            <p data-i18n="why_stat1_desc" class="text-slate-400">Veiksmīga pieredze Nīderlandē ar augstākajām kvalitātes
+              prasībām.</p>
           </div>
           <div
             class="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-colors">
             <div class="text-4xl font-bold text-primary mb-4">-30%</div>
-            <h3 class="text-xl font-semibold mb-3">Laika Ietaupījums</h3>
-            <p class="text-slate-400">Mūsu optimizētie procesi ļauj pabeigt projektus ātrāk nekā vidēji tirgū.</p>
+            <h3 data-i18n="why_stat2_title" class="text-xl font-semibold mb-3">Laika Ietaupījums</h3>
+            <p data-i18n="why_stat2_desc" class="text-slate-400">Mūsu optimizētie procesi ļauj pabeigt projektus ātrāk
+              nekā vidēji tirgū.</p>
           </div>
           <div
             class="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-colors">
             <div class="text-4xl font-bold text-primary mb-4">100%</div>
-            <h3 class="text-xl font-semibold mb-3">ES Sertifikācija</h3>
-            <p class="text-slate-400">Visi darbi tiek veikti saskaņā ar EN 81-20 un EN 81-50 normatīviem.</p>
+            <h3 data-i18n="why_stat3_title" class="text-xl font-semibold mb-3">ES Sertifikācija</h3>
+            <p data-i18n="why_stat3_desc" class="text-slate-400">Visi darbi tiek veikti saskaņā ar EN 81-20 un EN 81-50
+              normatīviem.</p>
           </div>
         </div>
       </div>
@@ -359,7 +386,7 @@
     <section id="solutions" class="py-20 bg-slate-50">
       <div class="container mx-auto px-6">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Mūsu Pakalpojumi</h2>
+          <h2 data-i18n="solutions_title" class="text-3xl md:text-4xl font-bold text-slate-900">Mūsu Pakalpojumi</h2>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
@@ -373,22 +400,22 @@
                 </path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-slate-900 mb-4">Pilna Modernizācija</h3>
+            <h3 data-i18n="service1_title" class="text-2xl font-bold text-slate-900 mb-4">Pilna Modernizācija</h3>
             <ul class="space-y-3 text-slate-600 mb-8">
-              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
+              <li data-i18n="service1_item1" class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>Vadības stacijas nomaiņa</li>
-              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
+              <li data-i18n="service1_item2" class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>Kabīnes interjera atjaunošana</li>
-              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
+              <li data-i18n="service1_item3" class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>Energoefektivitātes uzlabošana</li>
             </ul>
-            <a href="#contact"
+            <a href="#contact" data-i18n="service1_btn"
               class="block text-center py-3 px-6 border border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-colors">Uzzināt
               cenu</a>
           </div>
@@ -396,7 +423,7 @@
           <!-- Service 2 -->
           <div
             class="bg-white p-8 rounded-2xl shadow-xl border-2 border-primary/10 relative transform md:-translate-y-4 z-10">
-            <div
+            <div data-i18n="service2_badge"
               class="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">
               POPULĀRĀKAIS</div>
             <div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center text-white mb-6">
@@ -406,22 +433,22 @@
                 </path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-slate-900 mb-4">Jaunu Liftu Montāža</h3>
+            <h3 data-i18n="service2_title" class="text-2xl font-bold text-slate-900 mb-4">Jaunu Liftu Montāža</h3>
             <ul class="space-y-3 text-slate-600 mb-8">
-              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
+              <li data-i18n="service2_item1" class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>KONE / Otis / Schindler risinājumi</li>
-              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
+              <li data-i18n="service2_item2" class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>Projektēšana un saskaņošana</li>
-              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
+              <li data-i18n="service2_item3" class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>Garantija līdz 5 gadiem</li>
             </ul>
-            <a href="#contact"
+            <a href="#contact" data-i18n="service2_btn"
               class="block text-center py-3 px-6 bg-primary text-white font-semibold rounded-lg hover:bg-blue-800 transition-colors shadow-lg shadow-blue-900/20">Pieteikt
               projektu</a>
           </div>
@@ -438,22 +465,22 @@
                   d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-slate-900 mb-4">Tehniskā Apkope</h3>
+            <h3 data-i18n="service3_title" class="text-2xl font-bold text-slate-900 mb-4">Tehniskā Apkope</h3>
             <ul class="space-y-3 text-slate-600 mb-8">
-              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
+              <li data-i18n="service3_item1" class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>24/7 avārijas dienests</li>
-              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
+              <li data-i18n="service3_item2" class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>Regulāra profilakse</li>
-              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
+              <li data-i18n="service3_item3" class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>Attālināta uzraudzība</li>
             </ul>
-            <a href="#contact"
+            <a href="#contact" data-i18n="service3_btn"
               class="block text-center py-3 px-6 border border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-colors">Noslēgt
               līgumu</a>
           </div>
@@ -473,16 +500,19 @@
                   class="w-full h-full object-cover" loading="lazy" decoding="async" width="1280" height="720">
               </div>
               <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 p-8">
-                <h4 class="text-white font-bold text-xl">Utrehta, Nīderlande</h4>
-                <p class="text-slate-300 text-sm">Viens no 150+ veiksmīgi modernizētajiem objektiem.</p>
+                <h4 data-i18n="exp_loc" class="text-white font-bold text-xl">Utrehta, Nīderlande</h4>
+                <p data-i18n="exp_loc_desc" class="text-slate-300 text-sm">Viens no 150+ veiksmīgi modernizētajiem
+                  objektiem.</p>
               </div>
             </div>
           </div>
           <div class="md:w-1/2">
-            <span class="text-primary font-bold uppercase tracking-widest text-sm mb-2 block">Starptautiska
+            <span data-i18n="exp_badge"
+              class="text-primary font-bold uppercase tracking-widest text-sm mb-2 block">Starptautiska
               Pieredze</span>
-            <h2 class="text-3xl font-bold text-slate-900 mb-6">Pieredze, ko novērtē Eiropā</h2>
-            <p class="text-lg text-slate-600 mb-6"> Mūsu komanda ir guvusi pieredzi Nīderlandē — valstī ar
+            <h2 data-i18n="exp_title" class="text-3xl font-bold text-slate-900 mb-6">Pieredze, ko novērtē Eiropā</h2>
+            <p data-i18n="exp_desc" class="text-lg text-slate-600 mb-6"> Mūsu komanda ir guvusi pieredzi Nīderlandē —
+              valstī ar
               visstingrākajiem liftu drošības standartiem pasaulē (Machinery Directive 2006/42/EC).</p>
             <ul class="space-y-4">
               <li class="flex items-start">
@@ -490,14 +520,15 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
-                <span class="text-slate-700">Auditēti 150+ lifti augstas intensitātes ēkās.</span>
+                <span data-i18n="exp_item1" class="text-slate-700">Auditēti 150+ lifti augstas intensitātes ēkās.</span>
               </li>
               <li class="flex items-start">
                 <svg class="w-6 h-6 text-green-500 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
-                <span class="text-slate-700">Nulles tolerances politika pret drošības pārkāpumiem.</span>
+                <span data-i18n="exp_item2" class="text-slate-700">Nulles tolerances politika pret drošības
+                  pārkāpumiem.</span>
               </li>
             </ul>
           </div>
@@ -509,8 +540,9 @@
     <section id="process" class="py-20 bg-white">
       <div class="container mx-auto px-6">
         <div class="text-center mb-16">
-          <h2 class="text-3xl font-bold text-slate-900 mb-4">Mūsu Darba Process</h2>
-          <p class="text-slate-600 max-w-2xl mx-auto">Caurspīdīgs un saprotams process no pirmā zvana līdz atslēgu
+          <h2 data-i18n="process_title" class="text-3xl font-bold text-slate-900 mb-4">Mūsu Darba Process</h2>
+          <p data-i18n="process_desc" class="text-slate-600 max-w-2xl mx-auto">Caurspīdīgs un saprotams process no pirmā
+            zvana līdz atslēgu
             nodošanai.</p>
         </div>
 
@@ -520,24 +552,27 @@
               class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-primary text-2xl font-bold mx-auto mb-6 relative z-10">
               1</div>
             <div class="hidden md:block absolute top-8 left-1/2 w-full h-0.5 bg-blue-100 -z-0"></div>
-            <h3 class="text-xl font-bold text-slate-900 mb-2">Audits (48h)</h3>
-            <p class="text-slate-500 text-sm">Bezmaksas tehniskais apsekojums un situācijas analīze.</p>
+            <h3 data-i18n="process_step1_title" class="text-xl font-bold text-slate-900 mb-2">Audits (48h)</h3>
+            <p data-i18n="process_step1_desc" class="text-slate-500 text-sm">Bezmaksas tehniskais apsekojums un
+              situācijas analīze.</p>
           </div>
           <div class="text-center relative">
             <div
               class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-primary text-2xl font-bold mx-auto mb-6 relative z-10">
               2</div>
             <div class="hidden md:block absolute top-8 left-1/2 w-full h-0.5 bg-blue-100 -z-0"></div>
-            <h3 class="text-xl font-bold text-slate-900 mb-2">Tāme & Plāns</h3>
-            <p class="text-slate-500 text-sm">Sagatavojam detalizētu tāmi un renovācijas plānu.</p>
+            <h3 data-i18n="process_step2_title" class="text-xl font-bold text-slate-900 mb-2">Tāme & Plāns</h3>
+            <p data-i18n="process_step2_desc" class="text-slate-500 text-sm">Sagatavojam detalizētu tāmi un renovācijas
+              plānu.</p>
           </div>
           <div class="text-center relative">
             <div
               class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-primary text-2xl font-bold mx-auto mb-6 relative z-10">
               3</div>
             <div class="hidden md:block absolute top-8 left-1/2 w-full h-0.5 bg-blue-100 -z-0"></div>
-            <h3 class="text-xl font-bold text-slate-900 mb-2">Realizācija</h3>
-            <p class="text-slate-500 text-sm">Montāža un modernizācija saskaņā ar grafiku.</p>
+            <h3 data-i18n="process_step3_title" class="text-xl font-bold text-slate-900 mb-2">Realizācija</h3>
+            <p data-i18n="process_step3_desc" class="text-slate-500 text-sm">Montāža un modernizācija saskaņā ar
+              grafiku.</p>
           </div>
           <div class="text-center">
             <div
@@ -546,8 +581,9 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-2">Sertifikācija</h3>
-            <p class="text-slate-500 text-sm">Nododam liftu ekspluatācijā ar visiem dokumentiem.</p>
+            <h3 data-i18n="process_step4_title" class="text-xl font-bold text-slate-900 mb-2">Sertifikācija</h3>
+            <p data-i18n="process_step4_desc" class="text-slate-500 text-sm">Nododam liftu ekspluatācijā ar visiem
+              dokumentiem.</p>
           </div>
         </div>
       </div>
@@ -565,53 +601,58 @@
           <details class="group p-6" open>
             <summary
               class="flex cursor-pointer list-none items-center justify-between text-lg font-semibold text-slate-900">
-              Cik ātri varam saņemt bezmaksas auditu?
+              <span data-i18n="faq_q1">Cik ātri varam saņemt bezmaksas auditu?</span>
               <span
                 class="ml-4 flex h-8 w-8 items-center justify-center rounded-full bg-slate-100 text-slate-600 group-open:rotate-45 transition-transform">+</span>
             </summary>
-            <p class="mt-4 text-slate-600">Auditu parasti veicam 48 stundu laikā pēc pieteikuma saņemšanas un
+            <p data-i18n="faq_a1" class="mt-4 text-slate-600">Auditu parasti veicam 48 stundu laikā pēc pieteikuma
+              saņemšanas un
               saskaņošanas par piekļuvi objektam.</p>
           </details>
           <details class="group p-6">
             <summary
               class="flex cursor-pointer list-none items-center justify-between text-lg font-semibold text-slate-900">
-              Vai jūs strādājat ar KONE, Otis un Schindler iekārtām?
+              <span data-i18n="faq_q2">Vai jūs strādājat ar KONE, Otis un Schindler iekārtām?</span>
               <span
                 class="ml-4 flex h-8 w-8 items-center justify-center rounded-full bg-slate-100 text-slate-600 group-open:rotate-45 transition-transform">+</span>
             </summary>
-            <p class="mt-4 text-slate-600">Jā, strādājam ar KONE, Otis, Schindler un līdzvērtīgiem risinājumiem,
+            <p data-i18n="faq_a2" class="mt-4 text-slate-600">Jā, strādājam ar KONE, Otis, Schindler un līdzvērtīgiem
+              risinājumiem,
               pielāgojot
               modernizāciju konkrētajam objektam.</p>
           </details>
           <details class="group p-6">
             <summary
               class="flex cursor-pointer list-none items-center justify-between text-lg font-semibold text-slate-900">
-              Cik ilgi aizņem modernizācijas projekts?
+              <span data-i18n="faq_q3">Cik ilgi aizņem modernizācijas projekts?</span>
               <span
                 class="ml-4 flex h-8 w-8 items-center justify-center rounded-full bg-slate-100 text-slate-600 group-open:rotate-45 transition-transform">+</span>
             </summary>
-            <p class="mt-4 text-slate-600">Termiņš atkarīgs no lifta tipa un apjoma, bet pēc audita sagatavojam skaidru
+            <p data-i18n="faq_a3" class="mt-4 text-slate-600">Termiņš atkarīgs no lifta tipa un apjoma, bet pēc audita
+              sagatavojam skaidru
               grafiku ar posmiem un termiņiem.</p>
           </details>
           <details class="group p-6">
             <summary
               class="flex cursor-pointer list-none items-center justify-between text-lg font-semibold text-slate-900">
-              Vai nodrošināt garantiju?
+              <span data-i18n="faq_q4">Vai nodrošināt garantiju?</span>
               <span
                 class="ml-4 flex h-8 w-8 items-center justify-center rounded-full bg-slate-100 text-slate-600 group-open:rotate-45 transition-transform">+</span>
             </summary>
-            <p class="mt-4 text-slate-600">Jā, garantijas nosacījumi tiek noteikti līgumā; jauniem liftiem garantija var
+            <p data-i18n="faq_a4" class="mt-4 text-slate-600">Jā, garantijas nosacījumi tiek noteikti līgumā; jauniem
+              liftiem garantija var
               būt
               līdz 5 gadiem.</p>
           </details>
           <details class="group p-6">
             <summary
               class="flex cursor-pointer list-none items-center justify-between text-lg font-semibold text-slate-900">
-              Ko ietver tehniskā apkope?
+              <span data-i18n="faq_q5">Ko ietver tehniskā apkope?</span>
               <span
                 class="ml-4 flex h-8 w-8 items-center justify-center rounded-full bg-slate-100 text-slate-600 group-open:rotate-45 transition-transform">+</span>
             </summary>
-            <p class="mt-4 text-slate-600">Apkope ietver regulāras pārbaudes, profilaktiskos darbus, avārijas izsaukumus
+            <p data-i18n="faq_a5" class="mt-4 text-slate-600">Apkope ietver regulāras pārbaudes, profilaktiskos darbus,
+              avārijas izsaukumus
               un
               detalizētas atskaites pārvaldniekam.</p>
           </details>
@@ -625,16 +666,17 @@
       <div class="container mx-auto px-6 relative z-10">
         <div class="grid md:grid-cols-2 gap-16 items-center">
           <div class="text-white">
-            <h2 class="text-4xl font-bold mb-6">Gatavi sakārtot liftu saimniecību?</h2>
-            <p class="text-blue-100 text-lg mb-8">Piesakiet bezmaksas auditu. Mēs sazināsimies 24 stundu laikā un
+            <h2 data-i18n="contact_title" class="text-4xl font-bold mb-6">Gatavi sakārtot liftu saimniecību?</h2>
+            <p data-i18n="contact_desc" class="text-blue-100 text-lg mb-8">Piesakiet bezmaksas auditu. Mēs sazināsimies
+              24 stundu laikā un
               sagatavosim piedāvājumu.</p>
             <ul class="space-y-4 mb-8">
-              <li class="flex items-center text-blue-100"><svg class="w-5 h-5 mr-3 text-green-400" fill="none"
-                  stroke="currentColor" viewBox="0 0 24 24">
+              <li data-i18n="contact_item1" class="flex items-center text-blue-100"><svg
+                  class="w-5 h-5 mr-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>Bez slēptām izmaksām</li>
-              <li class="flex items-center text-blue-100"><svg class="w-5 h-5 mr-3 text-green-400" fill="none"
-                  stroke="currentColor" viewBox="0 0 24 24">
+              <li data-i18n="contact_item2" class="flex items-center text-blue-100"><svg
+                  class="w-5 h-5 mr-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>Bezmaksas konsultācija</li>
             </ul>
@@ -654,41 +696,46 @@
               <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
               <div class="mb-4">
-                <label class="block text-slate-700 text-sm font-bold mb-2" for="name">Vārds, Uzvārds</label>
-                <input
+                <label data-i18n="form_name_label" class="block text-slate-700 text-sm font-bold mb-2" for="name">Vārds,
+                  Uzvārds</label>
+                <input data-i18n-placeholder="form_name_placeholder"
                   class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-primary focus:ring-2 focus:ring-primary/50 outline-none transition-all"
                   type="text" id="name" name="name" placeholder="Jānis Bērziņš" required autocomplete="name">
               </div>
 
               <div class="mb-4">
-                <label class="block text-slate-700 text-sm font-bold mb-2" for="email">E-pasts</label>
-                <input
+                <label data-i18n="form_email_label" class="block text-slate-700 text-sm font-bold mb-2"
+                  for="email">E-pasts</label>
+                <input data-i18n-placeholder="form_email_placeholder"
                   class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-primary focus:ring-2 focus:ring-primary/50 outline-none transition-all"
                   type="email" id="email" name="email" placeholder="janis@example.com" required autocomplete="email">
               </div>
 
               <div class="mb-4">
-                <label class="block text-slate-700 text-sm font-bold mb-2" for="phone">Tālrunis</label>
-                <input
+                <label data-i18n="form_phone_label" class="block text-slate-700 text-sm font-bold mb-2"
+                  for="phone">Tālrunis</label>
+                <input data-i18n-placeholder="form_phone_placeholder"
                   class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-primary focus:ring-2 focus:ring-primary/50 outline-none transition-all"
                   type="tel" id="phone" name="phone" placeholder="+371 20000000" required autocomplete="tel"
                   inputmode="tel">
               </div>
 
               <div class="mb-6">
-                <label class="block text-slate-700 text-sm font-bold mb-2" for="message">Adrese / Komentārs</label>
-                <textarea
+                <label data-i18n="form_message_label" class="block text-slate-700 text-sm font-bold mb-2"
+                  for="message">Adrese / Komentārs</label>
+                <textarea data-i18n-placeholder="form_message_placeholder"
                   class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-primary focus:ring-2 focus:ring-primary/50 outline-none transition-all"
                   id="message" name="message" rows="3" placeholder="Objekta adrese vai jautājums..."
                   autocomplete="street-address"></textarea>
               </div>
 
-              <button type="submit"
+              <button type="submit" data-i18n="form_submit"
                 class="w-full bg-primary hover:bg-blue-800 text-white font-bold py-4 rounded-lg transition-transform hover:scale-[1.02] shadow-lg">
                 Nosūtīt Pieteikumu
               </button>
               <div id="form-status" class="mt-4 hidden p-4 rounded-lg text-center font-medium"></div>
-              <p class="text-xs text-slate-400 mt-4 text-center">Jūsu dati ir drošībā. Mēs tos neizpaužam trešajām
+              <p data-i18n="form_privacy" class="text-xs text-slate-400 mt-4 text-center">Jūsu dati ir drošībā. Mēs tos
+                neizpaužam trešajām
                 pusēm.
               </p>
             </form>
@@ -705,22 +752,23 @@
         <div>
           <img src="/img/logo.jpg" alt="Goldenko Logo"
             class="h-10 w-auto mb-4 opacity-90 grayscale hover:grayscale-0 transition-all">
-          <p class="leading-relaxed text-sm">Profesionāla liftu modernizācija un serviss Rīgā. Nīderlandes kvalitāte
+          <p data-i18n="footer_desc" class="leading-relaxed text-sm">Profesionāla liftu modernizācija un serviss Rīgā.
+            Nīderlandes kvalitāte
             Latvijas tirgū.</p>
         </div>
         <div>
-          <h4 class="text-white font-bold mb-4">Pakalpojumi</h4>
+          <h4 data-i18n="footer_services" class="text-white font-bold mb-4">Pakalpojumi</h4>
           <ul class="space-y-2 text-sm">
-            <li><a href="#" class="hover:text-white transition-colors">Renovācija</a></li>
+            <li><a href="#" data-i18n="nav_solutions" class="hover:text-white transition-colors">Renovācija</a></li>
             <li><a href="#" class="hover:text-white transition-colors">Montāža</a></li>
             <li><a href="#" class="hover:text-white transition-colors">Apkope</a></li>
             <li><a href="#" class="hover:text-white transition-colors">Audits</a></li>
           </ul>
         </div>
         <div>
-          <h4 class="text-white font-bold mb-4">Kontakti</h4>
+          <h4 data-i18n="nav_contact" class="text-white font-bold mb-4">Kontakti</h4>
           <ul class="space-y-2 text-sm">
-            <li>Rīga, Latgales iela 417-73, LV-1063</li>
+            <li data-i18n="footer_address">Rīga, Latgales iela 417-73, LV-1063</li>
             <li><a href="tel:+37126820410" class="hover:text-white transition-colors">+371 26820410</a></li>
             <li><a href="mailto:info@goldenko.lv" class="hover:text-white transition-colors">info@goldenko.lv</a></li>
           </ul>
@@ -730,14 +778,16 @@
           </div>
         </div>
         <div>
-          <h4 class="text-white font-bold mb-4">Juridiskā Info</h4>
+          <h4 data-i18n="footer_legal" class="text-white font-bold mb-4">Juridiskā Info</h4>
           <ul class="space-y-2 text-sm">
-            <li><a href="privacy.html" class="hover:text-white transition-colors">Privātuma Politika</a></li>
-            <li><a href="terms.html" class="hover:text-white transition-colors">Lietošanas Noteikumi</a></li>
+            <li><a href="privacy.html" data-i18n="footer_privacy" class="hover:text-white transition-colors">Privātuma
+                Politika</a></li>
+            <li><a href="terms.html" data-i18n="footer_terms" class="hover:text-white transition-colors">Lietošanas
+                Noteikumi</a></li>
           </ul>
         </div>
       </div>
-      <div class="border-t border-slate-800 pt-8 text-center text-xs">
+      <div data-i18n="footer_copy" class="border-t border-slate-800 pt-8 text-center text-xs">
         &copy; 2026 Goldenko. Visas tiesības aizsargātas.
       </div>
     </div>

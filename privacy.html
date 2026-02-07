@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privātuma Politika | Goldenko</title>
+    <title data-i18n="privacy_title">Privātuma Politika | Goldenko</title>
     <meta name="description" content="Goldenko SIA privātuma politika un personas datu apstrādes noteikumi." />
     <link rel="preload" href="/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/src/style.css">
@@ -33,55 +33,73 @@
 
 <body class="bg-slate-50 text-slate-900 antialiased">
     <a href="#main" class="skip-link">Pāriet uz saturu</a>
-    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200" id="navbar" aria-label="Galvenā navigācija">
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200" id="navbar"
+        aria-label="Galvenā navigācija">
         <div class="container mx-auto px-6 h-24 flex items-center justify-between">
             <a href="./" class="block">
                 <img src="/img/logo.jpg" alt="Goldenko Logo" class="h-20 w-auto object-contain" width="220" height="80">
             </a>
-            <a href="./" class="text-sm font-medium text-slate-600 hover:text-primary transition-colors">Atgriezties uz
-                sākumu</a>
+            <div class="flex items-center gap-6">
+                <div class="flex items-center space-x-2 text-xs font-bold border-r border-slate-200 pr-6 mr-2">
+                    <button class="lang-btn text-primary" data-lang="lv">LV</button>
+                    <span class="text-slate-300">|</span>
+                    <button class="lang-btn text-slate-400" data-lang="en">EN</button>
+                    <span class="text-slate-300">|</span>
+                    <button class="lang-btn text-slate-400" data-lang="ru">RU</button>
+                </div>
+                <a href="./" data-i18n="back_to_home"
+                    class="text-sm font-medium text-slate-600 hover:text-primary transition-colors">Atgriezties uz
+                    sākumu</a>
+            </div>
         </div>
     </nav>
 
     <main id="main" class="pt-32 pb-20 container mx-auto px-6 max-w-4xl">
-        <h1 class="text-3xl font-bold mb-8">Privātuma Politika</h1>
+        <h1 data-i18n="privacy_h1" class="text-3xl font-bold mb-8">Privātuma Politika</h1>
 
         <div class="max-w-none text-slate-700 leading-relaxed">
-            <h2 class="text-xl font-bold mt-6 mb-4">1. Pārzinis</h2>
-            <p class="mb-4">Personas datu apstrādes pārzinis ir <strong>Goldenko SIA</strong>, vienotais reģistrācijas
+            <h2 data-i18n="privacy_s1_title" class="text-xl font-bold mt-6 mb-4">1. Pārzinis</h2>
+            <p data-i18n="privacy_s1_desc" class="mb-4">Personas datu apstrādes pārzinis ir <strong>Goldenko
+                    SIA</strong>, vienotais reģistrācijas
                 numurs <strong>40203342143</strong>, juridiskā adrese: <strong>Rīga, Latgales iela 417 - 73,
                     LV-1063</strong>. Tālrunis: +371 26820410, e-pasts: info@goldenko.lv.</p>
 
-            <h2 class="text-xl font-bold mt-6 mb-4">2. Datu apstrādes mērķis</h2>
-            <p class="mb-4">Mēs apstrādājam Jūsu personas datus (vārds, uzvārds, tālruņa numurs, e-pasta adrese), lai:
+            <h2 data-i18n="privacy_s2_title" class="text-xl font-bold mt-6 mb-4">2. Datu apstrādes mērķis</h2>
+            <p data-i18n="privacy_s2_desc" class="mb-4">Mēs apstrādājam Jūsu personas datus (vārds, uzvārds, tālruņa
+                numurs, e-pasta adrese), lai:
             </p>
             <ul class="list-disc pl-5 mb-4">
-                <li>Sagatavotu un nosūtītu komercpiedāvājumus par liftu modernizāciju un apkalpošanu;</li>
-                <li>Sazinātos ar Jums par pieteikto bezmaksas auditu;</li>
-                <li>Nodrošinātu līguma saistību izpildi.</li>
+                <li data-i18n="privacy_s2_item1">Sagatavotu un nosūtītu komercpiedāvājumus par liftu modernizāciju un
+                    apkalpošanu;</li>
+                <li data-i18n="privacy_s2_item2">Sazinātos ar Jums par pieteikto bezmaksas auditu;</li>
+                <li data-i18n="privacy_s2_item3">Nodrošinātu līguma saistību izpildi.</li>
             </ul>
 
-            <h2 class="text-xl font-bold mt-6 mb-4">3. Datu glabāšana</h2>
-            <p class="mb-4">Jūsu dati tiek glabāti tik ilgi, cik nepieciešams iepriekš minēto mērķu sasniegšanai vai cik
+            <h2 data-i18n="privacy_s3_title" class="text-xl font-bold mt-6 mb-4">3. Datu glabāšana</h2>
+            <p data-i18n="privacy_s3_desc" class="mb-4">Jūsu dati tiek glabāti tik ilgi, cik nepieciešams iepriekš
+                minēto mērķu sasniegšanai vai cik
                 to nosaka Latvijas Republikas likumdošana (piemēram, grāmatvedības likums).</p>
 
-            <h2 class="text-xl font-bold mt-6 mb-4">4. Datu nodošana</h2>
-            <p class="mb-4">Mēs nenododam Jūsu datus trešajām personām, izņemot gadījumus, kad to pieprasa likums vai
-                tas ir nepieciešams pakalpojuma nodrošināšanai (piemēram, tehniskajiem sadarbības partneriem objektā).
+            <h2 data-i18n="privacy_s4_title" class="text-xl font-bold mt-6 mb-4">4. Datu nodošana</h2>
+            <p data-i18n="privacy_s4_desc" class="mb-4">Mēs nenododam Jūsu datus trešajām personām, izņemot gadījumus,
+                kad to pieprasa likums vai
+                tas ir nepieciešams pakalpojuma nodроšināšanai (piemēram, tehniskajiem sadarbības partneriem objektā).
             </p>
 
-            <h2 class="text-xl font-bold mt-6 mb-4">5. Jūsu tiesības</h2>
-            <p class="mb-4">Saskaņā ar Vispārīgo datu aizsardzības regulu (GDPR), Jums ir tiesības pieprasīt piekļuvi
+            <h2 data-i18n="privacy_s5_title" class="text-xl font-bold mt-6 mb-4">5. Jūsu tiesības</h2>
+            <p data-i18n="privacy_s5_desc" class="mb-4">Saskaņā ar Vispārīgo datu aizsardzības regulu (GDPR), Jums ir
+                tiesības pieprasīt piekļuvi
                 saviem personas datiem, to labošanu vai dzēšanu, kā arī iebilst pret apstrādi. Lai īstenotu šīs
                 tiesības, lūdzu, sazinieties ar mums, rakstot uz info@goldenko.lv.</p>
         </div>
     </main>
 
     <footer class="bg-slate-900 border-t border-slate-800 pt-16 pb-8 text-slate-400">
-        <div class="container mx-auto px-6 text-center">
+        <div data-i18n="footer_copy" class="container mx-auto px-6 text-center">
             <p class="text-xs">&copy; 2024 Goldenko SIA. Visas tiesības aizsargātas.</p>
         </div>
     </footer>
+    <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>

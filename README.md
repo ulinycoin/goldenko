@@ -35,6 +35,21 @@ To deploy this project to production (Vercel, Netlify, etc.):
    - Drag and drop the `dist` folder to Netlify Drop.
    - Or connect GitHub repo and set Build Command: `npm run build`, Publish Directory: `dist`.
 
+## GitHub Pages + Custom Domain
+This repo includes GitHub Actions workflow for automatic Pages deploy from `main`.
+
+1. In GitHub open: `Settings -> Pages`.
+2. Set `Source` to `GitHub Actions`.
+3. In `Custom domain` set: `goldenko.lv`.
+4. In DNS provider add records:
+   - `A` record for `@` to GitHub Pages IPs:
+     - `185.199.108.153`
+     - `185.199.109.153`
+     - `185.199.110.153`
+     - `185.199.111.153`
+   - `CNAME` record for `www` to `ulinycoin.github.io`
+5. Keep `Enforce HTTPS` enabled in GitHub Pages after DNS propagation.
+
 ## Project Structure
 - `index.html`: Main structure (B2B content).
 - `src/main.js`: Animation logic (GSAP) and interactivity.
