@@ -627,8 +627,11 @@
         </div>
 
         <div class="bg-white p-8 rounded-2xl shadow-2xl">
-          <form name="contact" method="POST" data-netlify="true" aria-label="Pieteikuma forma">
-            <input type="hidden" name="form-name" value="contact">
+          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" aria-label="Pieteikuma forma">
+            <input type="hidden" name="access_key" value="d53d1c3d-b5f0-4367-92c6-b88afc4cb44c">
+            <input type="hidden" name="subject" value="Jauns pieteikums no goldenko.lv">
+            <input type="hidden" name="from_name" value="Goldenko Website">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
             <div class="mb-4">
               <label class="block text-slate-700 text-sm font-bold mb-2" for="name">Vārds, Uzvārds</label>
@@ -663,6 +666,7 @@
               class="w-full bg-primary hover:bg-blue-800 text-white font-bold py-4 rounded-lg transition-transform hover:scale-[1.02] shadow-lg">
               Nosūtīt Pieteikumu
             </button>
+            <div id="form-status" class="mt-4 hidden p-4 rounded-lg text-center font-medium"></div>
             <p class="text-xs text-slate-400 mt-4 text-center">Jūsu dati ir drošībā. Mēs tos neizpaužam trešajām pusēm.
             </p>
           </form>
