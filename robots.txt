@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://goldenko.lv/sitemap.xml
+
+# LLM Crawler Settings
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
